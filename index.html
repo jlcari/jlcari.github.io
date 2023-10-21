@@ -69,17 +69,17 @@
             }
         }
 
-        var copyButton = document.getElementById("copyButton");
-        copyButton.onclick = () => {
-            var result = document.getElementById("result").innerText;
-            navigator.clipboard.writeText(result)
-                .then(() => {
-                    alert("Result copied to clipboard!");
-                })
-                .catch((error) => {
-                    console.error("Failed to copy result: ", error);
-                });
-        }
+var copyButton = document.getElementById("copyButton");
+copyButton.onclick = () => {
+    var result = document.getElementById("result").innerText;
+    navigator.clipboard.writeText(result)
+        .then(() => {
+            alert("<link>JL</link> says Result Copied to Clipboard!");
+        })
+        .catch((error) => {
+            console.error("Failed to copy result: ", error);
+        });
+}
     </script>
   </body>
 </html>
