@@ -69,17 +69,16 @@
             }
         }
 
-var copyButton = document.getElementById("copyButton");
-copyButton.onclick = () => {
-    var result = document.getElementById("result").innerText;
-    navigator.clipboard.writeText(result)
-        .then(() => {
-            alert("<link>JL</link> says Result Copied to Clipboard!");
-        })
-        .catch((error) => {
-            console.error("Failed to copy result: ", error);
-        });
-}
+ var copy = () => {
+            if (!navigator.clipboard) {
+                var resultArea = document.getElementById("result");
+                resultArea.focus();
+                resultArea.select();
+                document.execCommand('copy');
+                return;
+            }
+            navigator.clipboard.writeText(document.getElementById("result").innerHTML);
+        }
     </script>
   </body>
 </html>
