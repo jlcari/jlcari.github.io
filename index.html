@@ -69,18 +69,18 @@
             }
         }
 
- var copy = () => {
-            if (!navigator.clipboard) {
-                var resultArea = document.getElementById("result");
-                resultArea.focus();
-                resultArea.select();
-                document.execCommand('copy');
-                return;
-            }
-            navigator.clipboard.writeText(document.getElementById("result").innerHTML);
+    var <link>copy</link> = () => {
+        if (!navigator.clipboard) {
+            var resultArea = document.getElementById("result");
+            resultArea.focus();
+            resultArea.select();
+            document.execCommand('copy');
+            return;
         }
-    </script>
-  </body>
+        navigator.clipboard.writeText(document.getElementById("result").innerHTML);
+    }
+</script>
+</body>
 </html>
 
 JL's Encrypting Site
