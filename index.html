@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,43 +5,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Jekyll theme CSS -->
+    <link rel="stylesheet" href="<link>https://cdn.jsdelivr.net/npm/minimal@3.4.0/dist/styles/main.css</link>">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-    <title>Notion - Encrypted Text</title>
+    <title><link>JL's Encryption Site</link></title>
+    <meta name="description" content="<link>For my Notion Project</link>">
   </head>
   <body>
       <div class="container p-3">
         <div>
-            <label><link>Password</link></label>
+            <label>Password</label>
             <input class="form-control" name="password" id="password" type="password">
         </div>
         <div>
-            <label><link>Text</link></label>
+            <label>Text</label>
             <textarea class="form-control" id="text" rows="10"></textarea>
         </div>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="option" id="optionEncrypt">
             <label class="form-check-label" for="optionEncrypt">
-                <link>Encrypt</link>
+                Encrypt
             </label>
         </div>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="option" id="optionDecrypt">
             <label class="form-check-label" for="optionDecrypt">
-                <link>Decrypt</link>
+                Decrypt
             </label>
         </div>
         <div>
-            <button id="go" type="button" class="btn btn-primary"><link>Generate Text</link></button>
-            <button onclick="copy()" type="button" class="btn btn-success ml-4"><link>Copy to Clipboard</link></button>
+            <button id="go" type="button" class="btn btn-primary">Generate Text</button>
+            <button onclick="copy()" type="button" class="btn btn-success ml-4">Copy to Clipboard</button>
         </div>
-        <h1 class="mt-1"><link>Result</link></h1>
+        <h1 class="mt-1">Result</h1>
         <div id="result" style='white-space:pre'>
             
         </div>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script type="text/javascript">
         var password = document.getElementById("password");
         var text = document.getElementById("text");
